@@ -65,7 +65,7 @@ jobs:
         with:
           name: node-app
 
-      - name: "Deploy to Azure WebApp"
+      - name: "Deploy to Static Web App"
         id: deploy-to-webapp
         uses: Azure/static-web-apps-deploy@v1
         with:
@@ -74,3 +74,4 @@ jobs:
           action: "upload"
           app_location: "src"
           output_location: "dist"
+          skip_api_build: true
