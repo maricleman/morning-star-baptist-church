@@ -1,7 +1,7 @@
 export default {    
 
 //Title.tsx
-title: 'To Do List',
+title: 'Morning Star Baptist Church',
 
 //AddItem.tsx
 todoTextBoxPlaceholder: 'What needs to be done?',
