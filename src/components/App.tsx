@@ -1,8 +1,10 @@
-import React, { useEffect, useState } from 'react'
-import Header from './Header';
-import MainInfo from './MainInfo';
+import React, { useEffect, useState } from 'react';
+import Header from './pages/Header';
+import MainInfo from './pages/MainInfo';
 import styles from './AppStyles.scss'
-import BeliefStatement from './BeliefStatement';
+import BeliefStatement from './pages/BeliefStatement';
+import Sermons from './pages/Sermons';
+import AboutUs from './pages/AboutUs';
 
 /**
  * I want to extend a thanks to this example for
@@ -17,9 +19,11 @@ function App() {
 
     return (
         <div className={styles.mainContainer}>
-            <Header onSetSelectedPage={(page) => setSelectedPage(page)} />
+            <Header onSetSelectedPage={(page) => setSelectedPage(page)} selectedPage={selectedPage} />
             {selectedPage === 'welcome' && <MainInfo />}
+            {selectedPage === 'sermons' && <Sermons />}
             {selectedPage === 'beliefs' && <BeliefStatement />}
+            {selectedPage === 'about' && <AboutUs />}
         </div>
     );
 }

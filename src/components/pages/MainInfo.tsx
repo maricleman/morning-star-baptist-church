@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './MainInfo.scss';
+import styles from './styles/MainInfo.scss';
 
 
 export const MainInfo: React.FC = () => {

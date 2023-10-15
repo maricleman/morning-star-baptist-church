@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './BeliefStatement.scss';
+import styles from './styles/BeliefStatement.scss';
 
 
 export const BeliefStatement: React.FC = () => {

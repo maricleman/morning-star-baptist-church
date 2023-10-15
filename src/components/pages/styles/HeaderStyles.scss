@@ -2,7 +2,7 @@
     display: flex;
     width: 100%;
     flex-direction: column;
-    background-color: #1867a5;
+    background-color: #bec6cc;
 
     .title {
         display: flex;
@@ -14,5 +14,9 @@
     .navBar {
         display: flex;
         justify-content: space-between;
+
+        .navItem {
+            cursor: pointer;
+        }
     }
 }
